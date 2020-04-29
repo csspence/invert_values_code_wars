@@ -7,6 +7,10 @@ invert([]) == []
 You can assume that all values are integers. Do not mutate the input array/list.
 */
 
-function invert(array) {
-   return ;
+const invert = (array) => {
+   let newArray = [];
+   for(let i = 0; i < array.length; i++) {
+      newArray.push(array[i] * -1);
+   }
+   return newArray;
 }
